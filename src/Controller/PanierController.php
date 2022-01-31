@@ -67,14 +67,6 @@ class PanierController extends AbstractController
     {
         //commande 
 
-
-        // $commandeDetails = new CommandeDetails();
-        // $manager = $this->getDoctrine()->getManager();
-
-        // $commandeDetails->setName($user->getId());
-        // $manager->persist($commandeDetails);
-        // $manager->flush();
-
         
         $commandeDetails = new CommandeDetails();
         $formDetails = $this->createForm(CommandeDetailsType::class, $commandeDetails);

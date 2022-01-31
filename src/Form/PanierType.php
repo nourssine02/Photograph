@@ -2,15 +2,15 @@
 
 namespace App\Form;
 
-use App\Entity\Article;
-use App\Entity\Panier;
 use App\Entity\User;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use App\Entity\Panier;
+use App\Entity\Article;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+
 
 class PanierType extends AbstractType
 {
@@ -18,25 +18,13 @@ class PanierType extends AbstractType
     {
         $builder
             ->add('quantite', NumberType::class)
-            // ->add('taille', ChoiceType::class, [
-            //     'choices'  => [
-            //         'S' => 'S',
-            //         'M' => 'M',
-            //         'L' => 'L',
-            //         'XL' => 'XL',
-            //     ]
-            // ])
-            // ->add('couleur', ChoiceType::class, [
-            //     'choices'  => [
-            //         'Bleu' => 'Bleu',
-            //         'Black' => 'Black',
-            //         'Red' => 'Red',
-            //         'Pink' => 'Pink',
-            //         'White' => 'White',
-            //         'Gray' => 'Gray',
-            //         'Brown' => 'Brown'
-            //     ]
-            // ])
+            ->add('demande', ChoiceType::class, [
+                'choices'  => [
+                'Editing' => 'Editing',
+                'Printing' => 'Printing',
+                'Both' => 'Both',
+                ],
+            ])
             ;
     }
 

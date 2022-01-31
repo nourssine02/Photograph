@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use App\Repository\PanierRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
  * @ORM\Entity(repositoryClass=PanierRepository::class)
@@ -19,23 +21,19 @@ class Panier
 
     /**
      * @ORM\Column(type="integer")
+     * /**
+     * @Assert\Positive
      */
     private $quantite;
-
-    // /**
-    //  * @ORM\Column(type="string", length=255)
-    //  */
-    // private $couleur;
-
-    // /**
-    //  * @ORM\Column(type="string", length=255)
-    //  */
-    // private $taille;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $articleName;
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $demande;
 
     /**
      * @ORM\Column(type="float")
@@ -57,7 +55,7 @@ class Panier
      */
     private $userId;
 
-  
+
 
     public function getId(): ?int
     {
@@ -76,29 +74,6 @@ class Panier
         return $this;
     }
 
-    public function getCouleur(): ?string
-    {
-        return $this->couleur;
-    }
-
-    public function setCouleur(string $couleur): self
-    {
-        $this->couleur = $couleur;
-
-        return $this;
-    }
-
-    public function getTaille(): ?string
-    {
-        return $this->taille;
-    }
-
-    public function setTaille(string $taille): self
-    {
-        $this->taille = $taille;
-
-        return $this;
-    }
 
     public function getArticleName(): ?string
     {
@@ -108,6 +83,17 @@ class Panier
     public function setArticleName(string $articleName): self
     {
         $this->articleName = $articleName;
+
+        return $this;
+    }
+    public function getDemande(): ?string
+    {
+        return $this->demande;
+    }
+
+    public function setDemande(string $demande): self
+    {
+        $this->demande = $demande;
 
         return $this;
     }
@@ -159,7 +145,4 @@ class Panier
 
         return $this;
     }
-
-
-   
 }

@@ -78,17 +78,17 @@ class ShopController extends AbstractController
 
             $user = $this->getUser();
             // if ($user) {
-                $panier->setUserId($user->getId())
-                    ->setArticleId($article->getId())
-                    ->setArticleName($article->getName())
-                    ->setPrixArticle($article->getPrix())
-                    ->setImageArticle($article->getImage());
+            $panier->setUserId($user->getId())
+                ->setArticleId($article->getId())
+                ->setArticleName($article->getName())
+                ->setPrixArticle($article->getPrix())
+                ->setImageArticle($article->getImage());
 
 
-                $manager->persist($panier);
-                $manager->flush();
+            $manager->persist($panier);
+            $manager->flush();
 
-                return $this->redirectToRoute("panier_index");
+            return $this->redirectToRoute("panier_index");
             // } else {
             //     return $this->redirectToRoute("securite_login");
             // }

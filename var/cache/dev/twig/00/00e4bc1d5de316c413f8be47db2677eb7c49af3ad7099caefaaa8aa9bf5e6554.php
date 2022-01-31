@@ -102,9 +102,9 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t\t\t\t\t\t\t\t\t<th class=\"2\"></th>
 \t\t\t\t\t\t\t\t\t<th class=\"-3\">Price</th>
 \t\t\t\t\t\t\t\t\t<th class=\"4\">Quantity</th>
-\t\t\t\t\t\t\t\t\t";
-        // line 26
-        echo "\t\t\t\t\t\t\t\t\t<th class=\"7\">Total</th>
+\t\t\t\t\t\t\t\t\t<th class=\"5\">Your Demande</th>
+
+\t\t\t\t\t\t\t\t\t<th class=\"6\">Total</th>
 \t\t\t\t\t\t\t\t</tr>
 
 
@@ -143,27 +143,34 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t\t\t\t\t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t\t\t\t</td>
-\t\t\t\t\t\t\t\t\t\t\t<td class=\"3\">\$
+\t\t\t\t\t\t\t\t\t\t\t<td class=\"3\">
 \t\t\t\t\t\t\t\t\t\t\t\t";
                 // line 50
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "prixArticle", [], "any", false, false, false, 50), "html", null, true);
-                echo "</td>
+                echo "
+\t\t\t\t\t\t\t\t\t\t\t\tDT</td>
 
 \t\t\t\t\t\t\t\t\t\t\t<td class=\"4\">
 \t\t\t\t\t\t\t\t\t\t\t\t";
-                // line 53
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "quantite", [], "any", false, false, false, 53), "html", null, true);
+                // line 54
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "quantite", [], "any", false, false, false, 54), "html", null, true);
                 echo "
 \t\t\t\t\t\t\t\t\t\t\t</td>
-
-\t\t\t\t\t\t\t\t\t\t\t";
-                // line 62
-                echo "
-\t\t\t\t\t\t\t\t\t\t\t<td class=\"7\">\$
+\t\t\t\t\t\t\t\t\t\t\t<td class=\"5\">
 \t\t\t\t\t\t\t\t\t\t\t\t";
-                // line 64
-                echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["item"], "prixArticle", [], "any", false, false, false, 64) * twig_get_attribute($this->env, $this->source, $context["item"], "quantite", [], "any", false, false, false, 64)), "html", null, true);
-                echo "</td>
+                // line 57
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "demande", [], "any", false, false, false, 57), "html", null, true);
+                echo "
+
+\t\t\t\t\t\t\t\t\t\t\t</td>
+
+
+\t\t\t\t\t\t\t\t\t\t\t<td class=\"6\">
+\t\t\t\t\t\t\t\t\t\t\t\t";
+                // line 63
+                echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["item"], "prixArticle", [], "any", false, false, false, 63) * twig_get_attribute($this->env, $this->source, $context["item"], "quantite", [], "any", false, false, false, 63)), "html", null, true);
+                echo "
+\t\t\t\t\t\t\t\t\t\t\t\tDT</td>
 \t\t\t\t\t\t\t\t\t\t</tr>
 
 \t\t\t\t\t\t\t\t\t";
@@ -224,10 +231,10 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 100
         echo "
-\t\t\t\t\t\t\t\t\$";
+\t\t\t\t\t\t\t\t";
         // line 101
         echo twig_escape_filter($this->env, (isset($context["total"]) || array_key_exists("total", $context) ? $context["total"] : (function () { throw new RuntimeError('Variable "total" does not exist.', 101, $this->source); })()), "html", null, true);
-        echo "
+        echo "DT
 \t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -241,7 +248,7 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"size-209\">
 \t\t\t\t\t\t\t<span class=\"mtext-110 cl2\">
-\t\t\t\t\t\t\t\t\$10
+\t\t\t\t\t\t\t\t8DT
 \t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t</div>
 
@@ -257,10 +264,10 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 
 \t\t\t\t\t\t<div class=\"size-209 p-t-1\">
 \t\t\t\t\t\t\t<span class=\"mtext-110 cl2\">
-\t\t\t\t\t\t\t\t\$";
+\t\t\t\t\t\t\t\t";
         // line 131
         echo twig_escape_filter($this->env, ((isset($context["total"]) || array_key_exists("total", $context) ? $context["total"] : (function () { throw new RuntimeError('Variable "total" does not exist.', 131, $this->source); })()) + 10), "html", null, true);
-        echo "
+        echo "DT
 \t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -268,7 +275,7 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t\t\t\t\t<a href=\"";
         // line 136
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("panier_check");
-        echo "\" class=\"flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer\" >
+        echo "\" class=\"flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer\">
 
 \t\t\t\t\t\tProceed to Checkout
 \t\t\t\t\t</a>
@@ -299,7 +306,7 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 
     public function getDebugInfo()
     {
-        return array (  270 => 136,  262 => 131,  229 => 101,  226 => 100,  220 => 99,  217 => 98,  215 => 97,  212 => 96,  209 => 95,  205 => 94,  178 => 69,  172 => 68,  165 => 64,  161 => 62,  155 => 53,  149 => 50,  140 => 44,  135 => 42,  127 => 37,  120 => 32,  117 => 31,  113 => 30,  107 => 26,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  277 => 136,  269 => 131,  236 => 101,  233 => 100,  227 => 99,  224 => 98,  222 => 97,  219 => 96,  216 => 95,  212 => 94,  185 => 69,  179 => 68,  171 => 63,  162 => 57,  156 => 54,  149 => 50,  140 => 44,  135 => 42,  127 => 37,  120 => 32,  117 => 31,  113 => 30,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -327,9 +334,9 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t\t\t\t\t\t\t\t\t<th class=\"2\"></th>
 \t\t\t\t\t\t\t\t\t<th class=\"-3\">Price</th>
 \t\t\t\t\t\t\t\t\t<th class=\"4\">Quantity</th>
-\t\t\t\t\t\t\t\t\t{# <th class=\"5\">Couleur</th>
-\t\t\t\t\t\t\t\t\t<th class=\"6\">Taille</th> #}
-\t\t\t\t\t\t\t\t\t<th class=\"7\">Total</th>
+\t\t\t\t\t\t\t\t\t<th class=\"5\">Your Demande</th>
+
+\t\t\t\t\t\t\t\t\t<th class=\"6\">Total</th>
 \t\t\t\t\t\t\t\t</tr>
 
 
@@ -352,22 +359,22 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t\t\t\t\t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t\t\t\t</td>
-\t\t\t\t\t\t\t\t\t\t\t<td class=\"3\">\$
-\t\t\t\t\t\t\t\t\t\t\t\t{{ item.prixArticle }}</td>
+\t\t\t\t\t\t\t\t\t\t\t<td class=\"3\">
+\t\t\t\t\t\t\t\t\t\t\t\t{{ item.prixArticle }}
+\t\t\t\t\t\t\t\t\t\t\t\tDT</td>
 
 \t\t\t\t\t\t\t\t\t\t\t<td class=\"4\">
 \t\t\t\t\t\t\t\t\t\t\t\t{{ item.quantite }}
 \t\t\t\t\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t\t\t\t\t\t<td class=\"5\">
+\t\t\t\t\t\t\t\t\t\t\t\t{{ item.demande }}
 
-\t\t\t\t\t\t\t\t\t\t\t{# <td class=\"5\">
-\t\t\t\t\t\t\t\t\t\t\t\t{{ item.couleur }}
 \t\t\t\t\t\t\t\t\t\t\t</td>
-\t\t\t\t\t\t\t\t\t\t\t<td class=\"6\">
-\t\t\t\t\t\t\t\t\t\t\t\t{{ item.taille }}
-\t\t\t\t\t\t\t\t\t\t\t</td> #}
 
-\t\t\t\t\t\t\t\t\t\t\t<td class=\"7\">\$
-\t\t\t\t\t\t\t\t\t\t\t\t{{ item.prixArticle *  item.quantite }}</td>
+
+\t\t\t\t\t\t\t\t\t\t\t<td class=\"6\">
+\t\t\t\t\t\t\t\t\t\t\t\t{{ item.prixArticle *  item.quantite }}
+\t\t\t\t\t\t\t\t\t\t\t\tDT</td>
 \t\t\t\t\t\t\t\t\t\t</tr>
 
 \t\t\t\t\t\t\t\t\t{% endif %}
@@ -404,7 +411,7 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t\t\t\t\t\t\t\t\t{% endif %}
 \t\t\t\t\t\t\t\t{% endfor %}
 
-\t\t\t\t\t\t\t\t\${{total}}
+\t\t\t\t\t\t\t\t{{total}}DT
 \t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -418,7 +425,7 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"size-209\">
 \t\t\t\t\t\t\t<span class=\"mtext-110 cl2\">
-\t\t\t\t\t\t\t\t\$10
+\t\t\t\t\t\t\t\t8DT
 \t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t</div>
 
@@ -434,12 +441,12 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 
 \t\t\t\t\t\t<div class=\"size-209 p-t-1\">
 \t\t\t\t\t\t\t<span class=\"mtext-110 cl2\">
-\t\t\t\t\t\t\t\t\${{ total + 10}}
+\t\t\t\t\t\t\t\t{{ total + 10}}DT
 \t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 
-\t\t\t\t\t<a href=\"{{path('panier_check')}}\" class=\"flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer\" >
+\t\t\t\t\t<a href=\"{{path('panier_check')}}\" class=\"flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer\">
 
 \t\t\t\t\t\tProceed to Checkout
 \t\t\t\t\t</a>
@@ -450,6 +457,6 @@ class __TwigTemplate_3d73ce21b000cfd7e8d6506c080f9e077b32329ff6b0ee199a9259fa808
 \t</div>
 
 </form>{% endblock %}
-", "panier/index.html.twig", "/home/hp/Symfony/eCommerce/templates/panier/index.html.twig");
+", "panier/index.html.twig", "/home/hp/Symfony/myProject/templates/panier/index.html.twig");
     }
 }

@@ -348,28 +348,6 @@ class User extends \App\Entity\User implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function addCommande(\App\Entity\Commande $commande): \App\Entity\User
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addCommande', [$commande]);
-
-        return parent::addCommande($commande);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeCommande(\App\Entity\Commande $commande): \App\Entity\User
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeCommande', [$commande]);
-
-        return parent::removeCommande($commande);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getFavoris(): \Doctrine\Common\Collections\Collection
     {
 

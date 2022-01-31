@@ -1469,6 +1469,6 @@ link.addEventListener('click', onClickBtnFavoris);
 
 \t</body>
 </html>
-", "base.html.twig", "/home/hp/Symfony/eCommerce/templates/base.html.twig");
+", "base.html.twig", "/home/hp/Symfony/myProject/templates/base.html.twig");
     }
 }

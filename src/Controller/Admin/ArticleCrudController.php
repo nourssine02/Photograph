@@ -33,7 +33,7 @@ class ArticleCrudController extends AbstractCrudController
             TextareaField::new('imageFile', 'Article image')
                 ->setFormType(VichImageType::class)->hideOnIndex(),
             ImageField::new('image')->setBasePath('/uploads/images/products')->onlyOnIndex(),
-          
+
 
             TextField::new('description'),
 

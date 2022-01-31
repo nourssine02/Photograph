@@ -21,9 +21,9 @@
 									<th class="2"></th>
 									<th class="-3">Price</th>
 									<th class="4">Quantity</th>
-									{# <th class="5">Couleur</th>
-									<th class="6">Taille</th> #}
-									<th class="7">Total</th>
+									<th class="5">Your Demande</th>
+
+									<th class="6">Total</th>
 								</tr>
 
 
@@ -46,22 +46,22 @@
 												</div>
 
 											</td>
-											<td class="3">$
-												{{ item.prixArticle }}</td>
+											<td class="3">
+												{{ item.prixArticle }}
+												DT</td>
 
 											<td class="4">
 												{{ item.quantite }}
 											</td>
+											<td class="5">
+												{{ item.demande }}
 
-											{# <td class="5">
-												{{ item.couleur }}
 											</td>
-											<td class="6">
-												{{ item.taille }}
-											</td> #}
 
-											<td class="7">$
-												{{ item.prixArticle *  item.quantite }}</td>
+
+											<td class="6">
+												{{ item.prixArticle *  item.quantite }}
+												DT</td>
 										</tr>
 
 									{% endif %}
@@ -98,7 +98,7 @@
 									{% endif %}
 								{% endfor %}
 
-								${{total}}
+								{{total}}DT
 							</span>
 						</div>
 					</div>
@@ -112,7 +112,7 @@
 						</div>
 						<div class="size-209">
 							<span class="mtext-110 cl2">
-								$10
+								8DT
 							</span>
 						</div>
 
@@ -128,12 +128,12 @@
 
 						<div class="size-209 p-t-1">
 							<span class="mtext-110 cl2">
-								${{ total + 10}}
+								{{ total + 10}}DT
 							</span>
 						</div>
 					</div>
 
-					<a href="{{path('panier_check')}}" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer" >
+					<a href="{{path('panier_check')}}" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
 
 						Proceed to Checkout
 					</a>

@@ -90,9 +90,35 @@ class __TwigTemplate_053bee9d57a2d0c8d5f3e72a11e8592500737c05352980d9f43b9510f0b
 \t<div class=\"bg0 m-t-23 p-b-140\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"flex-w flex-sb-m p-b-52\">
-\t\t\t\t";
-        // line 23
+\t\t\t\t<div class=\"flex-w flex-l-m filter-tope-group m-tb-10\">
+\t\t\t\t\t<button class=\"stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1\">
+\t\t\t\t\t\tAll Products
+\t\t\t\t\t</button>
+\t\t\t\t\t";
+        // line 15
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) || array_key_exists("categories", $context) ? $context["categories"] : (function () { throw new RuntimeError('Variable "categories" does not exist.', 15, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["categorie"]) {
+            // line 16
+            echo "
+\t\t\t\t\t\t<button class=\"stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5\" data-filter=\".";
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "name", [], "any", false, false, false, 17), "html", null, true);
+            echo "\">
+\t\t\t\t\t\t\t";
+            // line 18
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "name", [], "any", false, false, false, 18), "html", null, true);
+            echo "
+\t\t\t\t\t\t</button>
+\t\t\t\t\t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['categorie'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 21
         echo "
+\t\t\t\t</div>
+
 
 \t\t\t\t<!-- Search product -->
 \t\t\t\t";
@@ -149,11 +175,11 @@ class __TwigTemplate_053bee9d57a2d0c8d5f3e72a11e8592500737c05352980d9f43b9510f0b
 \t\t\t\t\t\t\t\t\t\t</a>
 
 \t\t\t\t\t\t\t\t\t\t<span class=\"stext-105 cl3\">
-\t\t\t\t\t\t\t\t\t\t\tdt
+\t\t\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t\t";
             // line 55
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "prix", [], "any", false, false, false, 55), "html", null, true);
-            echo "
+            echo "DT
 \t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t</div>
 
@@ -265,7 +291,7 @@ class __TwigTemplate_053bee9d57a2d0c8d5f3e72a11e8592500737c05352980d9f43b9510f0b
             // line 127
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "prixArticle", [], "any", false, false, false, 127), "html", null, true);
             echo "
-\t\t\t\t\t\t\t\t\t\t\t\t\tdt
+\t\t\t\t\t\t\t\t\t\t\t\t\tDT
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t</li>
@@ -302,9 +328,9 @@ class __TwigTemplate_053bee9d57a2d0c8d5f3e72a11e8592500737c05352980d9f43b9510f0b
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 144
-        echo "\t\t\t\t\t\t\t\t\tTotal: dt";
+        echo "\t\t\t\t\t\t\t\t\tTotal: ";
         echo twig_escape_filter($this->env, (isset($context["total"]) || array_key_exists("total", $context) ? $context["total"] : (function () { throw new RuntimeError('Variable "total" does not exist.', 144, $this->source); })()), "html", null, true);
-        echo "
+        echo "DT
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t<div class=\"header-cart-buttons flex-w w-full\">
@@ -408,7 +434,7 @@ link.addEventListener('click', onClickBtnFavoris);
 
     public function getDebugInfo()
     {
-        return array (  366 => 179,  356 => 178,  320 => 152,  313 => 148,  305 => 144,  299 => 143,  297 => 142,  295 => 141,  292 => 140,  290 => 139,  286 => 138,  280 => 134,  274 => 133,  266 => 127,  262 => 126,  253 => 120,  249 => 119,  242 => 115,  236 => 111,  234 => 110,  230 => 109,  203 => 84,  184 => 71,  181 => 70,  176 => 67,  171 => 64,  169 => 63,  163 => 60,  155 => 55,  147 => 50,  143 => 49,  132 => 42,  125 => 40,  116 => 34,  113 => 33,  109 => 32,  100 => 26,  95 => 23,  88 => 6,  78 => 5,  60 => 3,  37 => 1,);
+        return array (  392 => 179,  382 => 178,  346 => 152,  339 => 148,  331 => 144,  325 => 143,  323 => 142,  321 => 141,  318 => 140,  316 => 139,  312 => 138,  306 => 134,  300 => 133,  292 => 127,  288 => 126,  279 => 120,  275 => 119,  268 => 115,  262 => 111,  260 => 110,  256 => 109,  229 => 84,  210 => 71,  207 => 70,  202 => 67,  197 => 64,  195 => 63,  189 => 60,  181 => 55,  173 => 50,  169 => 49,  158 => 42,  151 => 40,  142 => 34,  139 => 33,  135 => 32,  126 => 26,  119 => 21,  110 => 18,  106 => 17,  103 => 16,  99 => 15,  88 => 6,  78 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -423,7 +449,7 @@ link.addEventListener('click', onClickBtnFavoris);
 \t<div class=\"bg0 m-t-23 p-b-140\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"flex-w flex-sb-m p-b-52\">
-\t\t\t\t{# <div class=\"flex-w flex-l-m filter-tope-group m-tb-10\">
+\t\t\t\t<div class=\"flex-w flex-l-m filter-tope-group m-tb-10\">
 \t\t\t\t\t<button class=\"stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1\">
 \t\t\t\t\t\tAll Products
 \t\t\t\t\t</button>
@@ -434,7 +460,7 @@ link.addEventListener('click', onClickBtnFavoris);
 \t\t\t\t\t\t</button>
 \t\t\t\t\t{% endfor %}
 
-\t\t\t\t</div> #}
+\t\t\t\t</div>
 
 
 \t\t\t\t<!-- Search product -->
@@ -466,8 +492,8 @@ link.addEventListener('click', onClickBtnFavoris);
 \t\t\t\t\t\t\t\t\t\t</a>
 
 \t\t\t\t\t\t\t\t\t\t<span class=\"stext-105 cl3\">
-\t\t\t\t\t\t\t\t\t\t\tdt
-\t\t\t\t\t\t\t\t\t\t\t{{article.prix}}
+\t\t\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t\t{{article.prix}}DT
 \t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t</div>
 
@@ -540,7 +566,7 @@ link.addEventListener('click', onClickBtnFavoris);
 
 \t\t\t\t\t\t\t\t\t\t\t\t\t{{item.quantite }}
 \t\t\t\t\t\t\t\t\t\t\t\t\tX{{ item.prixArticle}}
-\t\t\t\t\t\t\t\t\t\t\t\t\tdt
+\t\t\t\t\t\t\t\t\t\t\t\t\tDT
 \t\t\t\t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t\t</li>
@@ -556,7 +582,7 @@ link.addEventListener('click', onClickBtnFavoris);
 \t\t\t\t\t\t\t\t\t\t\t{% set total = total + (item.prixArticle * item.quantite) %}
 \t\t\t\t\t\t\t\t\t\t{# {% endif %} #}
 \t\t\t\t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t\t\t\t\tTotal: dt{{total }}
+\t\t\t\t\t\t\t\t\tTotal: {{total }}DT
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t<div class=\"header-cart-buttons flex-w w-full\">

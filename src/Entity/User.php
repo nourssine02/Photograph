@@ -19,6 +19,10 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *     fields = {"email"} ,
  *     message = "this email is already use !"
  * )
+ * @UniqueEntity(
+ *     fields = {"username"} ,
+ *     message = "this username is already use !"
+ * )
  */
 class User implements UserInterface
 {
@@ -80,9 +84,9 @@ class User implements UserInterface
      */
     private $favoris;
 
-    
 
-  
+
+
 
     public function __construct()
     {
@@ -227,27 +231,7 @@ class User implements UserInterface
         return $this->commandes;
     }
 
-    public function addCommande(Commande $commande): self
-    {
-        if (!$this->commandes->contains($commande)) {
-            $this->commandes[] = $commande;
-            $commande->setClientName($this);
-        }
 
-        return $this;
-    }
-
-    public function removeCommande(Commande $commande): self
-    {
-        if ($this->commandes->removeElement($commande)) {
-            // set the owning side to null (unless already changed)
-            if ($commande->getClientName() === $this) {
-                $commande->setClientName(null);
-            }
-        }
-
-        return $this;
-    }
 
     /**
      * @return Collection|Favoris[]
@@ -278,12 +262,4 @@ class User implements UserInterface
 
         return $this;
     }
-
-  
-
-
-
-    
-   
-   
 }
