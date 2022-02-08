@@ -1,12 +1,12 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '5.3.x-dev',
-        'version' => '5.3.9999999.9999999-dev',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '085c3fa17c7fb41f7fec4fb3e478444719a7d10e',
-        'name' => 'symfony/website-skeleton',
+        'reference' => '31d6abd2f933afd6d28b79d2c43926bfe0ed114d',
+        'name' => 'symfony/website',
         'dev' => true,
     ),
     'versions' => array(
@@ -609,6 +609,15 @@
             'install_path' => __DIR__ . '/../sensio/framework-extra-bundle',
             'aliases' => array(),
             'reference' => '01a4a9ba102a8034a968a46a939ba18ccdadc47e',
+            'dev_requirement' => false,
+        ),
+        'symfony/apache-pack' => array(
+            'pretty_version' => 'v1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'symfony-pack',
+            'install_path' => __DIR__ . '/../symfony/apache-pack',
+            'aliases' => array(),
+            'reference' => '3aa5818d73ad2551281fc58a75afd9ca82622e6c',
             'dev_requirement' => false,
         ),
         'symfony/asset' => array(
@@ -1289,13 +1298,13 @@
             'reference' => '9ba1e05fdc7a46979047ba6c8949bd35e3a386a5',
             'dev_requirement' => true,
         ),
-        'symfony/website-skeleton' => array(
-            'pretty_version' => '5.3.x-dev',
-            'version' => '5.3.9999999.9999999-dev',
+        'symfony/website' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '085c3fa17c7fb41f7fec4fb3e478444719a7d10e',
+            'reference' => '31d6abd2f933afd6d28b79d2c43926bfe0ed114d',
             'dev_requirement' => false,
         ),
         'symfony/yaml' => array(

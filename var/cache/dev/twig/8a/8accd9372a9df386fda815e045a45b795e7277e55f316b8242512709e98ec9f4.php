@@ -149,9 +149,6 @@ class __TwigTemplate_91f27cbaa05b4d38a7e2f64cd7d6c23725b384da5d489c9bc24ab5e4adf
         echo "
 
 
-\t\t\t";
-        // line 63
-        echo "
 
 \t\t</div>
 \t</section>
@@ -176,7 +173,7 @@ class __TwigTemplate_91f27cbaa05b4d38a7e2f64cd7d6c23725b384da5d489c9bc24ab5e4adf
 
     public function getDebugInfo()
     {
-        return array (  154 => 63,  148 => 40,  136 => 31,  128 => 26,  121 => 22,  116 => 20,  108 => 14,  99 => 11,  96 => 10,  92 => 9,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  148 => 40,  136 => 31,  128 => 26,  121 => 22,  116 => 20,  108 => 14,  99 => 11,  96 => 10,  92 => 9,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -223,31 +220,10 @@ class __TwigTemplate_91f27cbaa05b4d38a7e2f64cd7d6c23725b384da5d489c9bc24ab5e4adf
 \t\t\t{{ form_end(commande) }}
 
 
-\t\t\t{# <table class=\"table table-striped\">
-\t\t\t\t\t\t\t\t\t\t\t\t<thead>
-\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Date</th>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Client</th>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Total</th>
-\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t\t\t\t\t\t</thead>
-\t\t\t\t\t\t\t\t\t\t\t\t<tbody>
-\t\t\t\t\t\t\t\t\t\t\t\t\t{% for commande in commandes %}
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>{{commande.date | date('Y-m-d H:i:s')}}</td>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>{{commande.clientId}}</td>
-\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>{{commande.total}}</td>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>
-\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t\t\t\t\t\t\t\t</tbody>
-\t\t\t\t\t\t\t\t\t\t\t</table> #}
-
 
 \t\t</div>
 \t</section>
 {% endblock %}
-", "panier/checkout.html.twig", "/home/hp/Symfony/E-Commerce/templates/panier/checkout.html.twig");
+", "panier/checkout.html.twig", "/home/hp/Symfony/Photograph/templates/panier/checkout.html.twig");
     }
 }
